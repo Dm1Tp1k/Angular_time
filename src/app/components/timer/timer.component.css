@@ -65,7 +65,7 @@
 }
 #minute { 
     z-index: 3;     
-    top: calc(50% - 4px);
+    top: 50%;
     left: 0;
     padding: 0;
     width: 49vw;
@@ -73,12 +73,12 @@
 #minute:after {
     background: #F00;
     width: 40%;
-    left: calc(30% - 3px);
+    left: 30%;
     height: 4px;
 }
 #hour {    
     z-index: 2;     
-    top: calc(50% - 6px);
+    top: 50%;
     left: 0;
     padding: 0;
     width: 49vw;
@@ -86,7 +86,7 @@
 #hour:after {
     background: #00ff37;
     width: 30%;
-    left: calc(35% - 2px);
+    left: 35%;
     height: 6px;
     top: -4vw;
 }
