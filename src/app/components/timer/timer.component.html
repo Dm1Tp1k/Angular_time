@@ -1,0 +1,22 @@
+<div>
+  <div id="time">
+    <div *ngFor="let item of fakeArrayH; let index = index" id='l{{index+1}}'></div>
+    <div *ngFor="let item of fakeArrayM; let index = index" id='ln{{index+1}}' [ngStyle]="{transform : 'rotate('+(index+1)*6 + 'deg)'}"></div>
+<!-- 
+    for (i=1;i<=30;i++) {
+        $('#center').before('<div id="ln'+i+'"></div>');
+        $('#ln'+i).css({
+            "-moz-transform" : "rotate(" + i*6 + "deg)", 
+            "-webkit-transform" : "rotate(" + i*6 + "deg)", 
+            "transform" : "rotate(" + i*6 + "deg)", 
+       });
+    } -->
+
+
+    <div id="center"></div>
+    <div id="second" [ngStyle]="second"></div>
+    <div id="minute" [ngStyle]="minute"></div>
+    <div id="hour" [ngStyle]="hour"></div>
+  </div>
+  <div class="date">{{ myDate | date:'y.M.d H:mm:ss' }}</div>
+</div>
