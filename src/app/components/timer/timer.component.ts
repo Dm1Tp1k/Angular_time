@@ -17,7 +17,7 @@ export class TimerComponent implements OnInit {
   constructor() { }
 
 
-  timer() {
+  ngAfterContentInit() {
     setInterval(() => {
 
       this.myDate = new Date();
@@ -56,7 +56,6 @@ export class TimerComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.timer();
   }
 
 
